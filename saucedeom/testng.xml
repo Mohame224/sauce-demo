@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="test">
+		<classes>
+			<class name="logintestcases.UI" />
+			<class name="logintestcases.Functional" />
+			<class name="productstestcases.Functional" />
+			<class name="productstestcases.UI" />
+			<class name="menu.Functional" />
+			<class name="menu.UI" />
+			<class name="carttestcases.Functional" />
+			<class name="carttestcases.UI" />
+			<class name="checkout.Functional" />
+			<class name="checkout.UI" />
+			<class name="checkoutpreview.Functional" />
+			<class name="checkoutpreview.UI" />
+			<class name="completeCheckout.Functional" />
+			<class name="completeCheckout.UI" />
+			<class name="endtoend.EndToEnd" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
