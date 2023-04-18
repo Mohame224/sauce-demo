@@ -1,0 +1,579 @@
+<html>
+<head>
+<title>TestNG:  test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>100/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 17 21:20:56 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>274 seconds (274025 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='logintestcases.Functional.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functional<br>Test method: invalid credentials<br>Parameters: standard_user, , Epic sadface: Password is required</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functional@d86a6f</td></tr>
+<tr>
+<td title='logintestcases.UI.checkUIContent()'><b>checkUIContent</b><br>Test class: logintestcases.UI<br>Test method: check sign_in UI</td>
+<td></td>
+<td>2</td>
+<td>logintestcases.UI@4659191b</td></tr>
+<tr>
+<td title='logintestcases.Functional.validLogin()'><b>validLogin</b><br>Test class: logintestcases.Functional<br>Test method: valid login<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functional@d86a6f</td></tr>
+<tr>
+<td title='menu.UI.checkMenuSidebarAllItemsLink()'><b>checkMenuSidebarAllItemsLink</b><br>Test class: menu.UI<br>Test method: check menu click UI </td>
+<td></td>
+<td>1</td>
+<td>menu.UI@2e385cce</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUICart()'><b>checkUICart</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI cart</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUI()'><b>checkUI</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentProducts()'><b>checkUIContentProducts</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI products </td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUI()'><b>checkProductItemsUI</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIRemoveBtnWithoutItems()'><b>checkCartUIRemoveBtnWithoutItems</b><br>Test class: carttestcases.UI<br>Test method: test cart UI RemoveBtn without items</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUILinkenInBtn()'><b>checkUILinkenInBtn</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview linkedin btn</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='checkout.Functional.press_cancelButton()'><b>press_cancelButton</b><br>Test class: checkout.Functional<br>Test method: test the checkout cancel button</td>
+<td></td>
+<td>2</td>
+<td>checkout.Functional@2a7f1f10</td></tr>
+<tr>
+<td title='carttestcases.Functional.testRemoveBtn()'><b>testRemoveBtn</b><br>Test class: carttestcases.Functional<br>Test method: test remove function</td>
+<td></td>
+<td>2</td>
+<td>carttestcases.Functional@2ddc9a9f</td></tr>
+<tr>
+<td title='productstestcases.Functional.checkaddtocart()'><b>checkaddtocart</b><br>Test class: productstestcases.Functional<br>Test method: test the inproducts cart buttons</td>
+<td></td>
+<td>2</td>
+<td>productstestcases.Functional@3646a422</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUIPriceBeforeTax()'><b>checkUIPriceBeforeTax</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview price before tax</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUICartContainer()'><b>checkUICartContainer</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview cart</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUICheckoutBtn()'><b>checkCartUICheckoutBtn</b><br>Test class: carttestcases.UI<br>Test method: test cart UI CheckoutBtn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUIFacebookBtn()'><b>checkUIFacebookBtn</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview facebookbtn</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='menu.Functional.pressAllItems()'><b>pressAllItems</b><br>Test class: menu.Functional<br>Test method: press all items from sidebar</td>
+<td></td>
+<td>2</td>
+<td>menu.Functional@3e27aa33</td></tr>
+<tr>
+<td title='checkoutpreview.Functional.cancelling()'><b>cancelling</b><br>Test class: checkoutpreview.Functional<br>Test method: test the checkout cancelling</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.Functional@f0c8a99</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUIPriceAfterTax()'><b>checkUIPriceAfterTax</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview price after tax</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUICompletionImg()'><b>checkUICompletionImg</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI completion img</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUITwitterBtn()'><b>checkCartUITwitterBtn</b><br>Test class: carttestcases.UI<br>Test method: test cart UI TwitterBtn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentFilter()'><b>checkUIContentFilter</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUIBackBtn()'><b>checkProductItemsUIBackBtn</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI back btn</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUILogo()'><b>checkUILogo</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI logo</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUIMenu()'><b>checkProductItemsUIMenu</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI menu</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentPriceTag()'><b>checkUIContentPriceTag</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI price tag</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUIImg()'><b>checkProductItemsUIImg</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI img </td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUILogo()'><b>checkUILogo</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview logo</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIProducts()'><b>checkCartUIProducts</b><br>Test class: carttestcases.UI<br>Test method: test cart UI Products</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='productstestcases.Functional.filterPriceLowToHigh()'><b>filterPriceLowToHigh</b><br>Test class: productstestcases.Functional<br>Test method: test the low to high price filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@3646a422</td></tr>
+<tr>
+<td title='checkout.Functional.press_continue()'><b>press_continue</b><br>Test class: checkout.Functional<br>Test method: test the checkout continue button</td>
+<td></td>
+<td>2</td>
+<td>checkout.Functional@2a7f1f10</td></tr>
+<tr>
+<td title='checkout.UI.checkUIPostalCode()'><b>checkUIPostalCode</b><br>Test class: checkout.UI<br>Test method: check checkout UI postal code</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUITwitterBtn()'><b>checkUITwitterBtn</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI twitter</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUIMenu()'><b>checkUIMenu</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview menu</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='logintestcases.Functional.checkSessionWhenPressBack()'><b>checkSessionWhenPressBack</b><br>Test class: logintestcases.Functional<br>Test method: check session after pressing back after signing in<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functional@d86a6f</td></tr>
+<tr>
+<td title='logintestcases.UI.checkUIContentUserName()'><b>checkUIContentUserName</b><br>Test class: logintestcases.UI<br>Test method: check sign_in UI username</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.UI@4659191b</td></tr>
+<tr>
+<td title='logintestcases.Functional.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functional<br>Test method: invalid credentials<br>Parameters: helo, yessir, Epic sadface: Username and password do not match any user in this service</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functional@d86a6f</td></tr>
+<tr>
+<td title='checkout.UI.checkUICancelBtn()'><b>checkUICancelBtn</b><br>Test class: checkout.UI<br>Test method: check checkout UI cancel btn</td>
+<td></td>
+<td>2</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUIMenuBtn()'><b>checkUIMenuBtn</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI Menu</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUIFaceBookBtn()'><b>checkProductItemsUIFaceBookBtn</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI facebook</td>
+<td></td>
+<td>2</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='completeCheckout.Functional.pressBackBtn()'><b>pressBackBtn</b><br>Test class: completeCheckout.Functional<br>Test method: test the back btn in completed checkout</td>
+<td></td>
+<td>3</td>
+<td>completeCheckout.Functional@26d9b808</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUICompletionText()'><b>checkUICompletionText</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI completion text</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='logintestcases.Functional.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functional<br>Test method: invalid credentials<br>Parameters: , secret_sauce, Epic sadface: Username is required</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functional@d86a6f</td></tr>
+<tr>
+<td title='menu.Functional.pressLogOut()'><b>pressLogOut</b><br>Test class: menu.Functional<br>Test method: press logout from sidebar</td>
+<td></td>
+<td>2</td>
+<td>menu.Functional@3e27aa33</td></tr>
+<tr>
+<td title='menu.UI.checkLogOut()'><b>checkLogOut</b><br>Test class: menu.UI<br>Test method: check logout in menu from products page </td>
+<td></td>
+<td>1</td>
+<td>menu.UI@2e385cce</td></tr>
+<tr>
+<td title='checkout.UI.checkUIFirstNameField()'><b>checkUIFirstNameField</b><br>Test class: checkout.UI<br>Test method: check checkout UI firstname</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='carttestcases.Functional.testContinueShoppingBtn()'><b>testContinueShoppingBtn</b><br>Test class: carttestcases.Functional<br>Test method: test continue shopping btn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.Functional@2ddc9a9f</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUICartQuantityWithoutItems()'><b>checkCartUICartQuantityWithoutItems</b><br>Test class: carttestcases.UI<br>Test method: test cart UI CartQuantity without items</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='logintestcases.Functional.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functional<br>Test method: invalid credentials<br>Parameters: locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functional@d86a6f</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUIFaceBookBtn()'><b>checkUIFaceBookBtn</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI facebook btn</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUIPriceTag()'><b>checkProductItemsUIPriceTag</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI price tag</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='productstestcases.Functional.filterPriceHighToLow()'><b>filterPriceHighToLow</b><br>Test class: productstestcases.Functional<br>Test method: test the high to low price filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@3646a422</td></tr>
+<tr>
+<td title='productstestcases.Functional.filternames_ZA()'><b>filternames_ZA</b><br>Test class: productstestcases.Functional<br>Test method: test the Z to A  name filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@3646a422</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUITax()'><b>checkUITax</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview tax</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUILinkedInBtn()'><b>checkUILinkedInBtn</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI linkedin btn</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUITwitter()'><b>checkProductItemsUITwitter</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI twitter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentCart()'><b>checkUIContentCart</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI cart</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='logintestcases.UI.checkUIContentLoginBtn()'><b>checkUIContentLoginBtn</b><br>Test class: logintestcases.UI<br>Test method: check sign_in UI login</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.UI@4659191b</td></tr>
+<tr>
+<td title='menu.Functional.pressAbout()'><b>pressAbout</b><br>Test class: menu.Functional<br>Test method: press about from sidebar</td>
+<td></td>
+<td>9</td>
+<td>menu.Functional@3e27aa33</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUICart()'><b>checkProductItemsUICart</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI cart</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='menu.UI.checkMenuSidebarAboutLink()'><b>checkMenuSidebarAboutLink</b><br>Test class: menu.UI<br>Test method: check about link in menu from products page </td>
+<td></td>
+<td>1</td>
+<td>menu.UI@2e385cce</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIFacebookBtn()'><b>checkCartUIFacebookBtn</b><br>Test class: carttestcases.UI<br>Test method: test cart UI FacebookBtn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentLinkedInBtn()'><b>checkUIContentLinkedInBtn</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI linkedin btn</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='checkout.UI.checkUILinkedInBtn()'><b>checkUILinkedInBtn</b><br>Test class: checkout.UI<br>Test method: check checkout UI linkedin btn</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='carttestcases.Functional.testChecOutBbtn()'><b>testChecOutBbtn</b><br>Test class: carttestcases.Functional<br>Test method: test the checkout btn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.Functional@2ddc9a9f</td></tr>
+<tr>
+<td title='checkout.UI.checkUITwitterBtn()'><b>checkUITwitterBtn</b><br>Test class: checkout.UI<br>Test method: check checkout UI Twitter btn</td>
+<td></td>
+<td>3</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='productstestcases.Functional.productAddToCart()'><b>productAddToCart</b><br>Test class: productstestcases.Functional<br>Test method: test the add to cart and remove buttons in products </td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@3646a422</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUILinkedinBtn()'><b>checkCartUILinkedinBtn</b><br>Test class: carttestcases.UI<br>Test method: test cart UI LinkedinBtn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIRemoveBtn()'><b>checkCartUIRemoveBtn</b><br>Test class: carttestcases.UI<br>Test method: test cart UI RemoveBtn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='checkout.UI.checkUILastName()'><b>checkUILastName</b><br>Test class: checkout.UI<br>Test method: check checkout UI lastname</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUICompleteContainer()'><b>checkUICompleteContainer</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI complete container</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='productstestcases.Functional.filternames_AZ()'><b>filternames_AZ</b><br>Test class: productstestcases.Functional<br>Test method: test the A to Z name filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@3646a422</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentFaceBookBtn()'><b>checkUIContentFaceBookBtn</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI facebook</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUITwitterBtn()'><b>checkUITwitterBtn</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview twitter btn</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+<tr>
+<td title='menu.Functional.pressResetAppState()'><b>pressResetAppState</b><br>Test class: menu.Functional<br>Test method: press reset app state from sidebar</td>
+<td></td>
+<td>2</td>
+<td>menu.Functional@3e27aa33</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUICartQuantity()'><b>checkCartUICartQuantity</b><br>Test class: carttestcases.UI<br>Test method: test cart UI CartQuantity</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='productstestcases.Functional.productClick()'><b>productClick</b><br>Test class: productstestcases.Functional<br>Test method: test the product name click buttons</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@3646a422</td></tr>
+<tr>
+<td title='checkout.UI.checkUILogo()'><b>checkUILogo</b><br>Test class: checkout.UI<br>Test method: check checkout UI logo</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUI()'><b>checkUI</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI back btn</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@f78a47e</td></tr>
+<tr>
+<td title='checkout.UI.checkUIContinueBtn()'><b>checkUIContinueBtn</b><br>Test class: checkout.UI<br>Test method: check checkout UI continue btn</td>
+<td></td>
+<td>2</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='menu.UI.checkmenusidebar()'><b>checkmenusidebar</b><br>Test class: menu.UI<br>Test method: check menu click UI from products page </td>
+<td></td>
+<td>1</td>
+<td>menu.UI@2e385cce</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIMenuBtn()'><b>checkCartUIMenuBtn</b><br>Test class: carttestcases.UI<br>Test method: test cart UI MenuBtn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentMenu()'><b>checkUIContentMenu</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI menu </td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIPriceTagsWithoutItems()'><b>checkCartUIPriceTagsWithoutItems</b><br>Test class: carttestcases.UI<br>Test method: test cart UI PriceTags without items</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContentTwitterBtn()'><b>checkUIContentTwitterBtn</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI twitter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='logintestcases.UI.checkUIContentPass()'><b>checkUIContentPass</b><br>Test class: logintestcases.UI<br>Test method: check sign_in UI password</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.UI@4659191b</td></tr>
+<tr>
+<td title='productstestcases.UI.checkProductItemsUILinkedInBtn()'><b>checkProductItemsUILinkedInBtn</b><br>Test class: productstestcases.UI<br>Test method: check inProduct page UI linkenin</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='logintestcases.Functional.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functional<br>Test method: invalid credentials<br>Parameters: , , Epic sadface: Username is required</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functional@d86a6f</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIContinuseBtn()'><b>checkCartUIContinuseBtn</b><br>Test class: carttestcases.UI<br>Test method: test cart UI ContinuseBtn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIProductsWithoutItems()'><b>checkCartUIProductsWithoutItems</b><br>Test class: carttestcases.UI<br>Test method: test cart UI Products without items</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='productstestcases.UI.checkUIContent()'><b>checkUIContent</b><br>Test class: productstestcases.UI<br>Test method: check inventoty UI logo</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UI@750e2b97</td></tr>
+<tr>
+<td title='menu.UI.checkStateResetLink()'><b>checkStateResetLink</b><br>Test class: menu.UI<br>Test method: check reset state app in menu from products page </td>
+<td></td>
+<td>1</td>
+<td>menu.UI@2e385cce</td></tr>
+<tr>
+<td title='endtoend.EndToEnd.EndToEndtest()'><b>EndToEndtest</b><br>Test class: endtoend.EndToEnd<br>Test method: Full test</td>
+<td></td>
+<td>1</td>
+<td>endtoend.EndToEnd@644baf4a</td></tr>
+<tr>
+<td title='carttestcases.UI.checkCartUIPriceTags()'><b>checkCartUIPriceTags</b><br>Test class: carttestcases.UI<br>Test method: test cart UI PriceTags</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@298a5e20</td></tr>
+<tr>
+<td title='checkout.UI.checkUIFaceBookBtn()'><b>checkUIFaceBookBtn</b><br>Test class: checkout.UI<br>Test method: check checkout UI facebook_btn</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='checkoutpreview.Functional.ordering()'><b>ordering</b><br>Test class: checkoutpreview.Functional<br>Test method: test the checkout completion step</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.Functional@f0c8a99</td></tr>
+<tr>
+<td title='checkout.UI.checkUIMenuBtn()'><b>checkUIMenuBtn</b><br>Test class: checkout.UI<br>Test method: check checkout UI menu</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='checkout.UI.checkUICartContainer()'><b>checkUICartContainer</b><br>Test class: checkout.UI<br>Test method: check checkout UI cart</td>
+<td></td>
+<td>1</td>
+<td>checkout.UI@46cdf8bd</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUIFinishBtn()'><b>checkUIFinishBtn</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview finish btn</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@740cae06</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<html>
+<head>
+<title>TestNG:  login</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>login</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>30/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 17 14:41:06 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>83 seconds (83595 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='checkOut.UI.checkUI()'><b>checkUI</b><br>Test class: checkOut.UI<br>Test method: check checkout UI</td>
+<td></td>
+<td>4</td>
+<td>checkOut.UI@5a45133e</td></tr>
+<tr>
+<td title='productstestcases.Functional.filternames_ZA()'><b>filternames_ZA</b><br>Test class: productstestcases.Functional<br>Test method: test the Z to A  name filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@242b836</td></tr>
+<tr>
+<td title='carttestcases.Functional.check_remove_function()'><b>check_remove_function</b><br>Test class: carttestcases.Functional<br>Test method: test remove function</td>
+<td></td>
+<td>2</td>
+<td>carttestcases.Functional@3527942a</td></tr>
+<tr>
+<td title='productstestcases.Functional.filterPriceLowToHigh()'><b>filterPriceLowToHigh</b><br>Test class: productstestcases.Functional<br>Test method: test the low to high price filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@242b836</td></tr>
+<tr>
+<td title='logintestcases.Functioncases.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functioncases<br>Test method: invalid credentials<br>Parameters: standard_user, , Epic sadface: Password is required</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functioncases@73e9cf30</td></tr>
+<tr>
+<td title='checkOut.Functional.press_continue()'><b>press_continue</b><br>Test class: checkOut.Functional<br>Test method: test the checkout continue button</td>
+<td></td>
+<td>2</td>
+<td>checkOut.Functional@1ed6388a</td></tr>
+<tr>
+<td title='logintestcases.Functioncases.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functioncases<br>Test method: invalid credentials<br>Parameters: , secret_sauce, Epic sadface: Username is required</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functioncases@73e9cf30</td></tr>
+<tr>
+<td title='checkOut.Functional.press_cancelButton()'><b>press_cancelButton</b><br>Test class: checkOut.Functional<br>Test method: test the checkout cancel button</td>
+<td></td>
+<td>1</td>
+<td>checkOut.Functional@1ed6388a</td></tr>
+<tr>
+<td title='logintestcases.Functioncases.validLogin()'><b>validLogin</b><br>Test class: logintestcases.Functioncases<br>Test method: valid login<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functioncases@73e9cf30</td></tr>
+<tr>
+<td title='logintestcases.Uicases.checkUIContent()'><b>checkUIContent</b><br>Test class: logintestcases.Uicases<br>Test method: check sign_in UI</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Uicases@c88a337</td></tr>
+<tr>
+<td title='checkoutpreview.UI.checkUI()'><b>checkUI</b><br>Test class: checkoutpreview.UI<br>Test method: test UI of checkout preview</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.UI@4f80542f</td></tr>
+<tr>
+<td title='productstestcases.Functional.filternames_AZ()'><b>filternames_AZ</b><br>Test class: productstestcases.Functional<br>Test method: test the A to Z name filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@242b836</td></tr>
+<tr>
+<td title='productstestcases.Functional.productAddToCart()'><b>productAddToCart</b><br>Test class: productstestcases.Functional<br>Test method: test the add to cart and remove buttons in products </td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@242b836</td></tr>
+<tr>
+<td title='carttestcases.Functional.continue_shopping_btn()'><b>continue_shopping_btn</b><br>Test class: carttestcases.Functional<br>Test method: test continue shopping btn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.Functional@3527942a</td></tr>
+<tr>
+<td title='logintestcases.Functioncases.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functioncases<br>Test method: invalid credentials<br>Parameters: locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functioncases@73e9cf30</td></tr>
+<tr>
+<td title='productstestcases.Functional.checkaddtocart()'><b>checkaddtocart</b><br>Test class: productstestcases.Functional<br>Test method: test the inproducts cart buttons</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@242b836</td></tr>
+<tr>
+<td title='logintestcases.Functioncases.checkSessionWhenPressBack()'><b>checkSessionWhenPressBack</b><br>Test class: logintestcases.Functioncases<br>Test method: check session after pressing back after signing in<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functioncases@73e9cf30</td></tr>
+<tr>
+<td title='productstestcases.UITestCases.checkProductItemsUI()'><b>checkProductItemsUI</b><br>Test class: productstestcases.UITestCases<br>Test method: check inProduct page UI</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UITestCases@3f6f6701</td></tr>
+<tr>
+<td title='endtoend.EndToEnd.EndToEndtest()'><b>EndToEndtest</b><br>Test class: endtoend.EndToEnd<br>Test method: Full test</td>
+<td></td>
+<td>1</td>
+<td>endtoend.EndToEnd@130c12b7</td></tr>
+<tr>
+<td title='checkoutpreview.Functional.ordering()'><b>ordering</b><br>Test class: checkoutpreview.Functional<br>Test method: test the checkout completion step</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.Functional@534a5a98</td></tr>
+<tr>
+<td title='logintestcases.Functioncases.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functioncases<br>Test method: invalid credentials<br>Parameters: helo, yessir, Epic sadface: Username and password do not match any user in this service</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functioncases@73e9cf30</td></tr>
+<tr>
+<td title='productstestcases.UITestCases.checkUIContent()'><b>checkUIContent</b><br>Test class: productstestcases.UITestCases<br>Test method: check inventoty UI </td>
+<td></td>
+<td>1</td>
+<td>productstestcases.UITestCases@3f6f6701</td></tr>
+<tr>
+<td title='carttestcases.Functional.check_out_btn()'><b>check_out_btn</b><br>Test class: carttestcases.Functional<br>Test method: test the checkout btn</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.Functional@3527942a</td></tr>
+<tr>
+<td title='carttestcases.UI.checkContentwhileAllItemsAdded()'><b>checkContentwhileAllItemsAdded</b><br>Test class: carttestcases.UI<br>Test method: test cat UI</td>
+<td></td>
+<td>1</td>
+<td>carttestcases.UI@942a29c</td></tr>
+<tr>
+<td title='productstestcases.Functional.filterPriceHighToLow()'><b>filterPriceHighToLow</b><br>Test class: productstestcases.Functional<br>Test method: test the high to low price filter</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@242b836</td></tr>
+<tr>
+<td title='logintestcases.Functioncases.invalidLogin()'><b>invalidLogin</b><br>Test class: logintestcases.Functioncases<br>Test method: invalid credentials<br>Parameters: , , Epic sadface: Username is required</td>
+<td></td>
+<td>1</td>
+<td>logintestcases.Functioncases@73e9cf30</td></tr>
+<tr>
+<td title='productstestcases.Functional.productClick()'><b>productClick</b><br>Test class: productstestcases.Functional<br>Test method: test the product name click buttons</td>
+<td></td>
+<td>1</td>
+<td>productstestcases.Functional@242b836</td></tr>
+<tr>
+<td title='checkoutpreview.Functional.cancelling()'><b>cancelling</b><br>Test class: checkoutpreview.Functional<br>Test method: test the checkout cancelling</td>
+<td></td>
+<td>2</td>
+<td>checkoutpreview.Functional@534a5a98</td></tr>
+<tr>
+<td title='completeCheckout.Functional.pressBackBtn()'><b>pressBackBtn</b><br>Test class: completeCheckout.Functional<br>Test method: test the back btn in completed checkout</td>
+<td></td>
+<td>3</td>
+<td>completeCheckout.Functional@60bd273d</td></tr>
+<tr>
+<td title='completeCheckout.UI.checkUI()'><b>checkUI</b><br>Test class: completeCheckout.UI<br>Test method: test completed checkout UI</td>
+<td></td>
+<td>2</td>
+<td>completeCheckout.UI@121314f7</td></tr>
+</table><p>
+</body>
+</html>
