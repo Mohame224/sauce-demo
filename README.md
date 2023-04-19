@@ -4,9 +4,13 @@ Automation framework for the famous training website [sauce demo](https://www.sa
 
 ### Pre-requisites
 1-Eclipse(or any IDE)
+
 2-Apache Maven
+
 3-TestNG framework
+
 4-JDK 
+
 5-Selenium Java
 
 
