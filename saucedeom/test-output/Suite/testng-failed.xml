@@ -1,61 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="login(failed)">
+  <listeners>
+    <listener class-name="base.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="test(failed)">
     <classes>
-      <class name="carttestcases.UI">
-        <methods>
-          <include name="checkContentwhileAllItemsAdded"/>
-          <include name="tear_down"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- carttestcases.UI -->
-      <class name="productstestcases.Functional">
-        <methods>
-          <include name="filterPriceLowToHigh"/>
-          <include name="filternames_ZA"/>
-          <include name="productClick"/>
-          <include name="checkaddtocart"/>
-          <include name="productAddToCart"/>
-          <include name="filterPriceHighToLow"/>
-          <include name="tear_down"/>
-          <include name="filternames_AZ"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- productstestcases.Functional -->
-      <class name="carttestcases.Functional">
-        <methods>
-          <include name="continue_shopping_btn"/>
-          <include name="check_out_btn"/>
-          <include name="check_remove_function"/>
-          <include name="tear_down"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- carttestcases.Functional -->
-      <class name="productstestcases.UITestCases">
-        <methods>
-          <include name="checkUIContent"/>
-          <include name="checkProductItemsUI"/>
-          <include name="tear_down"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- productstestcases.UITestCases -->
-      <class name="logintestcases.Functioncases">
-        <methods>
-          <include name="checkSessionWhenPressBack"/>
-          <include name="invalidLogin"/>
-          <include name="validLogin"/>
-          <include name="tear_down"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- logintestcases.Functioncases -->
-      <class name="logintestcases.Uicases">
+      <class name="logintestcases.UI">
         <methods>
           <include name="checkUIContent"/>
           <include name="tear_down"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- logintestcases.Uicases -->
+      </class> <!-- logintestcases.UI -->
     </classes>
-  </test> <!-- login(failed) -->
+  </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

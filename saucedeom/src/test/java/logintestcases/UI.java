@@ -15,6 +15,7 @@ public class UI extends SetupDriver {
 		SignInPage sign = new SignInPage();
 		sign.navigate();
 		Assert.assertTrue(ac.isDisplayed(driver.findElement(sign.logo)));
+
 	}
 
 	@Test(description = "check sign_in UI login")
